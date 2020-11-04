@@ -7,9 +7,8 @@ class Post extends React.Component {
   render() {
     return (
       <div>
-        <Header/>
         Postページです
-        
+
         {/* 開発用のページ移動ボタン */}
         <br/>
         <button className="button"><Link to="/dig">Digへ移動</Link></button>
