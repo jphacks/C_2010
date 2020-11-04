@@ -3,6 +3,8 @@ import './App.css';
 
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Dig from './container/dig.js';
+import Library from './container/library.js';
+import Post from './container/post.js';
 
 function App() {
   return (
@@ -28,6 +30,8 @@ function App() {
       <Router>
         <div>
           <Route path="/dig" component={ Dig } />
+          <Route path="/library" component={ Library } />
+          <Route path="/post" component={ Post } />
         </div>
       </Router>
     </div>
