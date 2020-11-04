@@ -11,8 +11,8 @@ class Library extends React.Component {
         
         {/* 開発用のページ移動ボタン */}
         <br/>
-        <button className="button"><Link to="/dig">Digへ移動</Link></button>
-        <button className="button"><Link to="/post">Postへ移動</Link></button>
+        <button className="dev-button"><Link to="/dig">Digへ移動</Link></button>
+        <button className="dev-button"><Link to="/post">Postへ移動</Link></button>
       </div>
     );
   }
