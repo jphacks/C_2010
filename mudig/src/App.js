@@ -1,9 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
 
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import Dig from './container/dig.js';
+
 function App() {
   return (
-    <div className="App">
+    <div>
+    {/* ↓create-react-appしたときの画面 */}
+    {/* <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -18,6 +23,13 @@ function App() {
           Learn React
         </a>
       </header>
+      <div>
+      </div> */}
+      <Router>
+        <div>
+          <Route path="/dig" component={ Dig } />
+        </div>
+      </Router>
     </div>
   );
 }
