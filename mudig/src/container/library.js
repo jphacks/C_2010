@@ -7,7 +7,6 @@ class Library extends React.Component {
   render() {
     return (
       <div className="is-variable">
-        <Header/>
         Libraryページです
         
         {/* 開発用のページ移動ボタン */}

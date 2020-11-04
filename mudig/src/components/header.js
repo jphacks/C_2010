@@ -5,7 +5,10 @@ class Header extends React.Component {
   render() {
     return (
       <div>
-        ヘッダー
+        <div className="header">
+          <div className="symbol">Mudig</div>
+          <div className="menu">メニューボタン</div>
+        </div>
       </div>
     )
   };

@@ -1,0 +1,28 @@
+/* スマホ・タブレット用CSS */
+@media (max-width: 1000px) {
+  .header {
+    height: 50px;
+    background-color: orange;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  .symbol {
+    background-color: pink;
+    margin: auto auto;
+  }
+
+  .menu {
+    right: auto;
+    background-color: blue;
+    width: 30px;
+    height: 30px;
+  }
+
+  /* 開発用ページ移動ボタンの設定 */
+  button {
+    
+  }
+}
+
+/* デスクトップ用CSS */
