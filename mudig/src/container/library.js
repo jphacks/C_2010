@@ -9,7 +9,7 @@ class Library extends React.Component {
     return (
       <div className="library">
         <div className="lib-title">
-          Library
+          <h3>Library</h3>
         </div>
         <div className="music-list">
           <FavCard/>

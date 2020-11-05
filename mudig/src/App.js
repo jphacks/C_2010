@@ -11,7 +11,7 @@ import Footer from './components/Footer.js';
 function App() {
   return (
     <div>
-      <Header/>
+      <Header className="fixed"/>
       <Router>
         <div>
           <Route path="/dig" component={ Dig } />
