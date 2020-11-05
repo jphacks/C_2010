@@ -5,7 +5,13 @@ class Post extends React.Component {
   render() {
     return (
       <div>
-        Postページです
+        <div>Post</div>
+        
+        <button className="dev-button">投稿</button>
+
+
+
+
 
         {/* 開発用のページ移動ボタン */}
         <br/>
