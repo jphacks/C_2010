@@ -6,28 +6,11 @@ import Dig from './container/dig.js';
 import Library from './container/library.js';
 import Post from './container/post.js';
 import Header from './components/header.js';
+import Footer from './components/footer.js';
 
 function App() {
   return (
     <div>
-    {/* ↓create-react-appしたときの画面 */}
-    {/* <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-      <div>
-      </div> */}
       <Header/>
       <Router>
         <div>
@@ -36,6 +19,7 @@ function App() {
           <Route path="/post" component={ Post } />
         </div>
       </Router>
+      <Footer/>
     </div>
   );
 }

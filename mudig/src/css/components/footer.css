@@ -1,0 +1,28 @@
+footer {
+  height: 80px;
+  width: 100%;
+  /* 確認用背景色 本来はwhite */
+  background-color: whitesmoke;
+}
+
+.share {
+  width: 50%;
+  height: 100%;
+  float: right;
+}
+
+.btn {
+  background-color: #F2CE16;
+  float: right;
+  height: 50px;
+  width: 50px;
+  margin-top: 15px;
+  margin-right: 15px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 25px;
+}
+
+a i {
+  color: white;
+}
