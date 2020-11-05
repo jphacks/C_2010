@@ -5,8 +5,8 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Dig from './container/dig.js';
 import Library from './container/library.js';
 import Post from './container/post.js';
-import Header from './components/header.js';
-import Footer from './components/footer.js';
+import Header from './components/Header.js';
+import Footer from './components/Footer.js';
 
 function App() {
   return (

@@ -1,3 +1,7 @@
 * {
   color: #333333;
 }
+
+.clear {
+  clear: left;
+}

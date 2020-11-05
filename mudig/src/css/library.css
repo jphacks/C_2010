@@ -1,0 +1,14 @@
+
+.library {
+  background-color: pink;
+  width: 95%;
+  margin: 0 auto 30px;
+}
+
+.lib-title {
+  /* ここを書いて欲しい！ */
+}
+
+.music-list {
+  background-color: skyblue;
+}

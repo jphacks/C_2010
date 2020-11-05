@@ -1,13 +1,24 @@
 import React from 'react';
-import Header from '../components/header.js';
+import Header from '../components/Header.js';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+
+import '../css/library.css';
+import FavCard from '../components/FavCard.js';
 
 class Library extends React.Component {
   render() {
     return (
-      <div className="is-variable">
-        Libraryページです
+      <div className="library">
+        <div className="lib-title">
+          Library
+        </div>
+        <div className="music-list">
+          <FavCard/>
+          <FavCard/>
+          <FavCard/>
+          <div className="clear"></div>
+        </div>
         
         {/* 開発用のページ移動ボタン */}
         <br/>
