@@ -10,11 +10,20 @@ div {text-align:center;}
 
 
 
-input#url-name{width:80%;}
+input#url-name{
+  width   : 80%;
+  padding : 6px;
+}
 
-input#artist-name{width:80%;}
+input#song-title{
+  width   : 80%;
+  padding : 6px;
+}
 
-input#song-title{width:80%;}
+input#artist-name{
+  width:80%;
+  padding: 6px;
+}
 
 textarea#comment{width:80%}
 

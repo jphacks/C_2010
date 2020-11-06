@@ -13,9 +13,9 @@ class Post extends React.Component {
           <p><br/>
           <input class="imput" type="text" id="url-name" cols="40" placeholder="URL"/></p>
       	  <p><br/>
-      	  <input class="imput" type="text" id="artist-name" name="artist-name" cols="40" placeholder="アーティスト名"/></p>
-      	  <p><br/>
       	  <input class="imput" type="text" id="song-title" name="song-title" cols="40" placeholder="曲名"/></p>
+      	  <p><br/>
+      	  <input class="imput" type="text" id="artist-name" name="artist-name" cols="40" placeholder="アーティスト名"/></p>
         	<p><br/>
         	<textarea class="texterea" id="comment" name="comment" cols="40" rows="10" placeholder="ここがおすすめ！"></textarea></p>
           <p><br/>
