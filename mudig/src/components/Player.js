@@ -16,17 +16,21 @@ class Player extends React.Component {
             <div className="jacket">
               <img className="jacket-img" src={jacketImage} />
               <div className="seekbar">
-                <div className="play-pos"/>
+                <div className="play-pos" />
               </div>
             </div>
           </div>
           <div className="right-btn">
             <i class="fas fa-chevron-right fa-3x"></i>
           </div>
-          <div className="clear"></div>
         </div>
         <div className="bottom">
-          BOTTOM
+          <div className="volume-ctl"><i class="fas fa-volume-up fa-2x"></i></div>
+          <div className="music-info">
+            <h3>Pretender</h3>
+            <h5>Official髭男dism</h5>
+          </div>
+          <div className="like-ctl"><i class="far fa-heart fa-2x"></i></div>
         </div>
       </div>
     );
