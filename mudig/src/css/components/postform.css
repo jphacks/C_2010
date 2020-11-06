@@ -1,0 +1,53 @@
+
+.post-form {
+  /* background-color: pink; */
+  width: 85%;
+  margin: 0px auto 40px;
+  text-align: center;
+}
+
+.input {
+  margin-bottom: 15px;
+}
+
+#url-name {
+}
+
+#song-title {
+}
+
+#artist-name {
+}
+
+#comment {
+  
+}
+
+#submit_button {
+  margin-top: 40px;
+
+  width: 110px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  background-color: #F2CE16;
+
+  /* display       : inline-block;
+  border-radius : 8%;
+  border-color  : #f2ce16;
+  font-size     : 10pt;
+  font-weight   : 600;
+  text-align    : center;
+  cursor        : pointer;
+  padding       : 10px 40px;
+  background    : #f2ce16;
+  color         : #333333;
+  line-height   : 1em;
+  opacity       : 0.9;
+  transition    : .1s; */
+}
+
+#submit_button:active {
+  background    : #ed7700;
+  border-width: thick;
+}
