@@ -63,7 +63,7 @@ class GetMusicData extends React.Component {
             return this.state.data.length;
             break;
           case "all":
-            return this.state.data.length;
+            return this.state.data;
             break;
           default:
             return "type error"

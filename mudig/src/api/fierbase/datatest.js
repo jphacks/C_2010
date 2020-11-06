@@ -34,7 +34,6 @@ class Firetest extends React.Component {
       ~
       <GetMusicData id={0} type="finish_time"/>
       <br/>
-      <GetMusicData  type="all"/>
       </div>
     )
   }
