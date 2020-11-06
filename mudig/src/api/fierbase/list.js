@@ -8,7 +8,7 @@ class List extends Component {
     this.state = {
       data: []
     };
-     this.getFireData();
+    this.getFireData();
   }
 
   // Firebaseからのデータ取得
@@ -49,7 +49,7 @@ class List extends Component {
     }
     return result;
   }
-//
+  //
 
   render() {
     if (this.state.data.length == 0) {
@@ -57,7 +57,7 @@ class List extends Component {
     }
     return (
       <table>
-      <tbody>{this.getTableData()}</tbody>
+        <tbody>{this.getTableData()}</tbody>
       </table>
     );
   }
