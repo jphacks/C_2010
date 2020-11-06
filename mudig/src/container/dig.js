@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 import '../css/dig.css';
 import Player from '../components/Player.js';
+import Comment from '../components/Comment.js';
 
 class Dig extends React.Component {
   render() {
@@ -10,6 +11,7 @@ class Dig extends React.Component {
       <div>
         Digページです
         <Player/>
+        <Comment/>
 
         {/* 開発用のページ移動ボタン */}
         <br/>
