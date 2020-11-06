@@ -1,6 +1,5 @@
 
 .library {
-  background-color: pink;
   width: 95%;
   margin: 0 auto 30px;
 }
@@ -15,8 +14,4 @@ padding-left: 10px;
 padding-bottom: 8px;
 
   /* ここを書いて欲しい！ */
-}
-
-.music-list {
-  background-color: skyblue;
 }
