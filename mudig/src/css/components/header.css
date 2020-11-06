@@ -32,3 +32,51 @@
 .add-margin-top {
   height: 50px;
 }
+
+
+.menu li {
+   position: relative;
+   float: left;
+}
+.menu li a {
+   display: block;
+   width: 220px;
+   padding: 10px;
+}
+.menu li a:hover {
+   background: #dbdbdb;
+}
+.menu li:hover > ul {
+   display: block;
+}
+.menu ul {
+   display: none;
+   position: absolute;
+   top: 38px;
+   width: 240px;
+}
+
+
+
+.menu li:hover > ul {
+   display: block;
+}
+
+.menu li a {
+   display: block;
+   width: 220px;
+   padding: 10px;
+   webkit-transition-duration: 0.3s;
+   -moz-transition-duration: 0.3s;
+   transition-duration: 0.3s;
+}
+
+
+
+.menu ul {
+   display: none;
+   position: absolute;
+   top: 0;
+   left: 240px;
+   width: 240px;
+}
