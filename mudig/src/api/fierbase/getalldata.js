@@ -7,8 +7,8 @@ async function GetAllData() {
   //  var data;
   let data = await db.ref("/").once("value").then(snapshot => snapshot.val());
 
-  console.log("data: ", data);
-  return data
+   console.log("data: ", data);
+  return data;
 }
 
 export default GetAllData;
