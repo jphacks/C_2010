@@ -1,6 +1,5 @@
 
 .library {
-  background-color: pink;
   width: 95%;
   margin: 0 auto 30px;
 }
@@ -13,8 +12,4 @@
   border-bottom: 2px solid black;
   padding-left: 10px;
   padding-bottom: 8px;
-}
-
-.music-list {
-  background-color: skyblue;
 }
