@@ -1,10 +1,12 @@
 
 .player {
-  background-color: pink;
+  /* background-color: pink; */
+  padding-top: 80px;
 }
 
 .top {
   height: 250px;
+  text-align: center;
 }
 
 .left-btn, .right-btn {
@@ -40,7 +42,7 @@
 
 .bottom {
   /* background-color: tan; */
-  height: 100px;
+  height: 90px;
   text-align: center;
 }
 

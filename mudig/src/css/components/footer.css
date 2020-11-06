@@ -2,7 +2,8 @@ footer {
   height: 80px;
   width: 100%;
   /* 確認用背景色 本来はwhite */
-  background-color: whitesmoke;
+  /* background-color: whitesmoke; */
+  bottom: 0px;
 }
 
 .share {
