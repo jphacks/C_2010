@@ -8,23 +8,23 @@ class Player extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      id: props.id,
+      id: this.props.id,
       url: "",
       title: "",
       artist: "",
     };
-  }
+  };
   async componentWillMount() {
     console.log("called willMount");
     this.setState({
-      url: await getMusicData(this.state.id, "url"),
-      title: await getMusicData(this.state.id, "title"),
-      artist: await getMusicData(this.state.id, "artist"),
+      url: await getMusicData(this.props.id, "url"),
+      title: await getMusicData(this.props.id, "title"),
+      artist: await getMusicData(this.props.id, "artist"),
     });
-  }
+  };
   render() {
-    console.log(this.state.id);
     console.log(this.state.url);
+    console.log(this.state.artist);
     return (
       <>
       { this.state.url ? (
