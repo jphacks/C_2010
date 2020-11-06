@@ -17,7 +17,7 @@ class Post extends React.Component {
       	  <p><br/>
       	  <input class="imput" type="text" id="song-title" name="song-title" cols="40" placeholder="曲名"/></p>
         	<p><br/>
-        	<textarea class="texterea" name="comment" cols="40" rows="10" placeholder="ここがおすすめ！"></textarea></p>
+        	<textarea class="texterea" id="comment" name="comment" cols="40" rows="10" placeholder="ここがおすすめ！"></textarea></p>
           <p><br/>
           <input type="submit" id="submit_button" value="投稿"/></p>
         </form>
