@@ -10,24 +10,24 @@ div {text-align:center;}
 
 
 
-input#url-name{
+.url-name{
   width   : 80%;
   padding : 6px;
 }
 
-input#song-title{
+.song-title{
   width   : 80%;
   padding : 6px;
 }
 
-input#artist-name{
-  width:80%;
-  padding: 6px;
+.artist-name{
+  width   : 80%;
+  padding : 6px;
 }
 
-textarea#comment{width:80%}
+.comment{width:80%}
 
-input#submit_button {
+.submit_button {
   display       : inline-block;
   border-radius : 8%;
   border-color  : #f2ce16;
@@ -43,6 +43,6 @@ input#submit_button {
   transition    : .1s;
 }
 input#submit_button:active {
-  background    : #ed7700;
-  border-width: thick;
+  background   : #ed7700;
+  border-width : thick;
 }

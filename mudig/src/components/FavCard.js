@@ -1,6 +1,5 @@
 import React from 'react';
 import '../css/components/favCard.css';
-import GetMusicData from '../fierbase/getfiredata';
 import YoutubeFrame from '../api/youtube/youtubeFrame';
 
 class FavCard extends React.Component {
