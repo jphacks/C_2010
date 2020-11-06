@@ -1,6 +1,6 @@
 import React from 'react';
 import '../css/components/favCard.css';
-import YoutubeFrame from '../api/youtube/youtubeFrame';
+import YoutubeFrame from '../api/youtube/youtubeFrame.js';
 
 class FavCard extends React.Component {
   constructor(props){

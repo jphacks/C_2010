@@ -1,0 +1,44 @@
+
+
+.post-player {
+  /* background-color: pink; */
+  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+
+.post-jacket {
+  width: 70%;
+  margin: 0 auto;
+  max-width: 300px;
+}
+
+.controller {
+  /* background-color: skyblue; */
+  height: 100px;
+  padding: 20px 15% 0px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.set-start {
+  display: inline-block;
+  float: left;
+  width: 60px;
+  height: 100%;
+}
+
+.play-button {
+  display: inline-block;
+  width: 90px;
+  height: 100%;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+.set-end {
+  display: inline-block;
+  float: right;
+  width: 60px;
+  height: 100%;
+}

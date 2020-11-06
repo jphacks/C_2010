@@ -1,0 +1,54 @@
+.comment {
+  /* background-color: skyblue; */
+  width: 85%;
+  height: 180px;
+  margin: 0px auto 40px;
+  border-top: 1px solid gray;
+}
+
+.comment-header {
+  /* background-color: gold; */
+  width: 100%;
+  height: 50px;
+  vertical-align: middle;
+  margin-top: 10px;
+}
+
+.comment-header-left {
+  float: left;
+  display: inline-block;
+  /* background-color: goldenrod; */
+  height: 100%;
+}
+
+.comment-header-left img {
+  background-color: ghostwhite;
+  display: inline-block;
+  height: 40px;
+  border-radius: 50%;
+  margin-top: 5px;
+}
+
+.username {
+  float: right;
+  line-height: 50px;
+  padding-left: 10px;
+}
+
+.comment-header-right {
+  display: inline-block;
+  /* background-color: green; */
+  float: right;
+}
+
+.comment-header-right p {
+  line-height: 50px;
+  font-size: small;
+  color: gray;
+}
+
+.comment-body p {
+  margin-top: 5px;
+  text-align: left;
+  font-size: 15px;
+}
