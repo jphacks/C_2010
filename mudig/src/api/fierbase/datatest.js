@@ -9,7 +9,7 @@ import "firebase/storage";
 
 
 import GetMusicData from './getfiredata.js'
-
+import GetAllData from './getalldata.js'
 
 import List from './list.js'
 
@@ -33,6 +33,8 @@ class Firetest extends React.Component {
       <GetMusicData id={0} type="start_time"/>
       ~
       <GetMusicData id={0} type="finish_time"/>
+      {console.log("data in datatest.js",GetAllData())}
+
       <br/>
       </div>
     )
