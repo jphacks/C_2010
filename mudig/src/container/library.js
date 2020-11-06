@@ -1,7 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import GetMusicData from '../api/fierbase/getfiredata';
-
 import '../css/library.css';
 import FavCard from '../components/FavCard.js';
 
@@ -9,7 +7,7 @@ class Library extends React.Component {
   constructor(props){
     super(props);
     this.state = {
-      ids: JSON.parse(localStorage.getItem("musicIds"))
+      ids: [0, 2]
     }
   }
   render() {
@@ -22,8 +20,8 @@ class Library extends React.Component {
               <h3>Library</h3>
             </div>
             <div className="music-list">
-              { this.state.ids.map((v) => {
-                <FavCard id={v} />
+              { this.state.ids.map(v => {
+                return <FavCard key={v} id={v} />
               })}
               <div className="clear"></div>
             </div>
