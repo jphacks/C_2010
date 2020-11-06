@@ -1,0 +1,34 @@
+
+button.button-1{
+  font-size:  100%;
+  font-weight:  bold;
+  padding:   8px 30px;
+  background-color:  #F2CE16;
+  color:  #333333
+}
+div {text-align:center;}
+
+
+
+input#url-name{width:70%;}
+
+input#artist-name{width:70%;}
+
+input#song-title{width:70%;}
+
+input#submit_button {
+  display       : inline-block;
+  border-radius : 5%;          /* 角丸       */
+  font-size     : 12pt;        /* 文字サイズ */
+  text-align    : center;      /* 文字位置   */
+  cursor        : pointer;     /* カーソル   */
+  padding       : 10px 20px;   /* 余白       */
+  background    : #f2ce16;     /* 背景色     */
+  color         : #333333;     /* 文字色     */
+  line-height   : 1em;         /* 1行の高さ  */
+  opacity       : 0.9;         /* 透明度     */
+  transition    : .3s;         /* なめらか変化 */
+}
+.button:hover {
+  opacity       : 1;           /* カーソル時透明度 */
+}
