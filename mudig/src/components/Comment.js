@@ -7,7 +7,7 @@ class Header extends React.Component {
       <div className="comment">
         <div className="comment-header">
           <div className="comment-header-left">
-            <img src="#"/>
+            <img src="logo192.png"/>
             <p className="username">Guest</p>
           </div>
           <div className="comment-header-right">

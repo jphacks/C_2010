@@ -5,3 +5,7 @@
 .clear {
   clear: left;
 }
+
+.dig-top {
+  height: 80px;
+}
