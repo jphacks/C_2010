@@ -9,7 +9,7 @@ class Library extends React.Component {
     return (
       <div className="library">
         <div className="lib-title">
-          Library
+          <h3>Library</h3>
         </div>
         <div className="music-list">
           <FavCard/>
@@ -17,7 +17,7 @@ class Library extends React.Component {
           <FavCard/>
           <div className="clear"></div>
         </div>
-        
+
         {/* 開発用のページ移動ボタン */}
         <br/>
         <button className="dev-button"><Link to="/dig">Digへ移動</Link></button>
