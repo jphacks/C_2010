@@ -23,7 +23,7 @@ class List extends Component {
         self.setState({
           data: snapshot.val()
         });
-        console.log(snapshot.val());
+
       });
 
   }
