@@ -13,8 +13,9 @@ class Dig extends React.Component {
         <Comment/>
 
         {/* 開発用のページ移動ボタン */}
-        <button className="dev-button"><Link to="/library">Libraryへ移動</Link></button>
-        <button className="dev-button"><Link to="/post">Postへ移動</Link></button>
+        <button><Link to="/dig">Digへ移動</Link></button>
+        <button><Link to="/library">Libraryへ移動</Link></button>
+        <button><Link to="/post">Postへ移動</Link></button>
       </div>
     );
   }
