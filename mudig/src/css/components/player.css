@@ -1,18 +1,18 @@
 
-/* よくわからんからCSS中身全部消してやり直し */
-
 .player {
   background-color: pink;
 }
 
 .top {
-  text-align: center;
+  height: 250px;
 }
 
 .left-btn, .right-btn {
-  background-color: slateblue;
-  width: 18%;
-  line-height: 300px;
+  /* background-color: slateblue; */
+  display: inline-block;
+  width: 15%;
+  height: 100%;
+  line-height: 250px;
 }
 
 .left-btn {
@@ -20,24 +20,52 @@
 }
 
 .jacket-wrapper {
-  
+  /* background-color: teal; */
+  display: inline-block;
+  width: 70%;
+  height: 100%;
+  text-align: center;
 }
 
 .jacket {
-  display: inline-block;
-  width: 64%;
+  margin: 0px auto;
+  max-width: 270px;
 }
 
 .right-btn {
   float: right;
 }
 
+/* ==== player bottom ==== */
+
 .bottom {
-  background-color: skyblue;
+  /* background-color: tan; */
   height: 100px;
-  width: 100%;
+  text-align: center;
 }
 
-.clear {
-  clear: left;
+.volume-ctl, .like-ctl {
+  width: 40px;
+  height: 40px;
+  margin-top: 5px;
+}
+
+.volume-ctl {
+  display: inline-block;
+}
+
+.music-info {
+  /* background-color: teal; */
+  display: inline-block;
+  margin: 0px 20px;
+  vertical-align: top;
+}
+
+.music-info h3 {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.like-ctl {
+  display: inline-block;
 }
