@@ -1,40 +1,73 @@
 import React from 'react';
 import '../css/components/player.css';
-
-import jacketImage from '../img/jacket-image.jpg';
+import getMusicData from '../api/fierbase/getfiredata';
+import YoutubeFrame from '../api/youtube/youtubeFrame';
 
 
 class Player extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      id: props.id,
+      url: "",
+      title: "",
+      artist: "",
+    };
+  }
+  async componentWillMount() {
+    console.log("called willMount");
+    this.setState({
+      url: await getMusicData(this.state.id, "url"),
+      title: await getMusicData(this.state.id, "title"),
+      artist: await getMusicData(this.state.id, "artist"),
+    });
+  }
   render() {
+    console.log(this.state.id);
+    console.log(this.state.url);
     return (
+      <>
+      { this.state.url ? (
       <div className="player">
         <div className="top">
           <div className="left-btn">
-            <i class="fas fa-chevron-left fa-3x"></i>
+            <i
+              class="fas fa-chevron-left fa-3x"
+              onClick={this.props.onPrev}
+            ></i>
           </div>
           <div className="jacket-wrapper">
             <div className="jacket">
-              <img className="jacket-img" src={jacketImage} />
+              <YoutubeFrame src={this.state.url} edge="250" />
               <div className="seekbar">
                 <div className="play-pos" />
               </div>
             </div>
           </div>
           <div className="right-btn">
-            <i class="fas fa-chevron-right fa-3x"></i>
+            <i
+              class="fas fa-chevron-right fa-3x"
+              onClick={this.props.onNext}
+            ></i>
           </div>
         </div>
         <div className="bottom">
-          <div className="volume-ctl"><i class="fas fa-volume-up fa-2x"></i></div>
-          <div className="music-info">
-            <h3>Pretender</h3>
-            <h5>Official髭男dism</h5>
+          <div className="volume-ctl">
+            <i class="fas fa-volume-up fa-2x"></i>
           </div>
-          <div className="like-ctl"><i class="far fa-heart fa-2x"></i></div>
+          <div className="music-info">
+            <h3>{this.state.artist}</h3>
+            <h5>{this.state.title}</h5>
+          </div>
+          <div className="like-ctl">
+            <i class="far fa-heart fa-2x"></i>
+          </div>
         </div>
       </div>
+      ) : null }
+      </>
     );
-  };
+  }
 }
 
 export default Player;
