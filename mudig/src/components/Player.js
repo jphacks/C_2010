@@ -10,7 +10,7 @@ class Player extends React.Component {
       <div className="player">
         <div className="top">
           <div className="left-btn">
-            <i class="fas fa-chevron-left fa-3x"></i>
+            <i className="fas fa-chevron-left fa-3x"></i>
           </div>
           <div className="jacket-wrapper">
             <div className="jacket">
@@ -21,16 +21,16 @@ class Player extends React.Component {
             </div>
           </div>
           <div className="right-btn">
-            <i class="fas fa-chevron-right fa-3x"></i>
+            <i className="fas fa-chevron-right fa-3x"></i>
           </div>
         </div>
         <div className="bottom">
-          <div className="volume-ctl"><i class="fas fa-volume-up fa-2x"></i></div>
+          <div className="volume-ctl"><i className="fas fa-volume-up fa-2x"></i></div>
           <div className="music-info">
             <h3>Pretender</h3>
             <h5>Official髭男dism</h5>
           </div>
-          <div className="like-ctl"><i class="far fa-heart fa-2x"></i></div>
+          <div className="like-ctl"><i className="far fa-heart fa-2x"></i></div>
         </div>
       </div>
     );

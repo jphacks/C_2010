@@ -27,10 +27,10 @@ class PostForm extends React.Component {
     return (
       <div className="post-form">
         <form onSubmit={this.handleSubmit.bind(this)}>
-          <input class="input" type="text" id="url-name" name="url" cols="40" placeholder="URL" value={this.state.url} onChange={this.handleChange}/>
-          <input class="input" type="text" id="song-title" name="title" cols="40" placeholder="曲名" value={this.state.title} onChange={this.handleChange} />
-          <input class="input" type="text" id="artist-name" name="artist" cols="40" placeholder="アーティスト名" value={this.state.artist} onChange={this.handleChange} />
-          <textarea class="textarea has-fixed-size" rows="6" id="comment" name="comment" placeholder="ここがおすすめ！" value={this.state.comment} onChange={this.handleChange}></textarea>
+          <input className="input" type="text" id="url-name" name="url" cols="40" placeholder="URL" value={this.state.url} onChange={this.handleChange}/>
+          <input className="input" type="text" id="song-title" name="title" cols="40" placeholder="曲名" value={this.state.title} onChange={this.handleChange} />
+          <input className="input" type="text" id="artist-name" name="artist" cols="40" placeholder="アーティスト名" value={this.state.artist} onChange={this.handleChange} />
+          <textarea className="textarea has-fixed-size" rows="6" id="comment" name="comment" placeholder="ここがおすすめ！" value={this.state.comment} onChange={this.handleChange}></textarea>
           <input type="submit" id="submit_button" value="投稿" />
         </form>
       </div>
