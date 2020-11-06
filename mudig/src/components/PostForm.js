@@ -14,13 +14,16 @@ class PostForm extends React.Component {
     this.setState({ [event.target.name]: event.target.value });
     console.log("form is changed", event.target.value);
   }
-
   handleSubmit(event) {
     event.preventDefault();
     console.log("submitted!");
     AddMusicData(this.state.artist, this.state.comment, 12, 45, this.state.title, this.state.url);
     // alert('A name was submitted: ' + this.state.value);
-
+    this.clearTextField();
+  }
+  clearTextField() {
+    // 要は画面の再読み込み
+    window.location.reload();
   }
 
   render() {
@@ -31,7 +34,7 @@ class PostForm extends React.Component {
           <input className="input" type="text" id="song-title" name="title" cols="40" placeholder="曲名" value={this.state.title} onChange={this.handleChange} />
           <input className="input" type="text" id="artist-name" name="artist" cols="40" placeholder="アーティスト名" value={this.state.artist} onChange={this.handleChange} />
           <textarea className="textarea has-fixed-size" rows="6" id="comment" name="comment" placeholder="ここがおすすめ！" value={this.state.comment} onChange={this.handleChange}></textarea>
-          <input type="submit" id="submit_button" value="投稿" />
+          <input type="submit" id="submit_button" value="投稿"/>
         </form>
       </div>
     )

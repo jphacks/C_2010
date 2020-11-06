@@ -22,7 +22,7 @@ class PostPlayer extends React.Component {
     console.log("tapped left button");
   }
   render() {
-    const ctl = this.state.isPlaying ? "fas fa-play fa-3x" : "fas fa-pause fa-3x";
+    const ctl = this.state.isPlaying ? "fas fa-pause fa-3x" : "fas fa-play fa-3x";
     return (
       <div className="post-player">
         <div className="">
