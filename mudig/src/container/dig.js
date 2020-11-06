@@ -9,7 +9,6 @@ class Dig extends React.Component {
   render() {
     return (
       <div>
-        <div className="dig-top"/>
         <Player/>
         <Comment/>
 
