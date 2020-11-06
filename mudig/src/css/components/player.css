@@ -1,0 +1,43 @@
+
+/* よくわからんからCSS中身全部消してやり直し */
+
+.player {
+  background-color: pink;
+}
+
+.top {
+  text-align: center;
+}
+
+.left-btn, .right-btn {
+  background-color: slateblue;
+  width: 18%;
+  line-height: 300px;
+}
+
+.left-btn {
+  float: left;
+}
+
+.jacket-wrapper {
+  
+}
+
+.jacket {
+  display: inline-block;
+  width: 64%;
+}
+
+.right-btn {
+  float: right;
+}
+
+.bottom {
+  background-color: skyblue;
+  height: 100px;
+  width: 100%;
+}
+
+.clear {
+  clear: left;
+}
