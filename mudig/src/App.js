@@ -19,7 +19,7 @@ function App() {
       <Router>
         <Header className="fixed" />
         <div>
-          <Route path="/dig" component={Dig} />
+          <Route exact path="/" component={Dig} />
           <Route path="/library" component={Library} />
           <Route path="/post" component={Post} />
           <Route path="/firetest" component={Firetest} />
