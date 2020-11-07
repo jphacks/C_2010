@@ -7,7 +7,7 @@ class Library extends React.Component {
   constructor(props){
     super(props);
     this.state = {
-      ids: [0, 2]
+      ids: [0, 1, 2, 3, 4, 5]
     }
   }
   render() {
