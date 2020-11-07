@@ -17,6 +17,10 @@
   line-height: 250px;
 }
 
+.left-btn:active, .right-btn:active {
+  opacity: 50%;
+}
+
 .left-btn {
   float: left;
 }
@@ -30,8 +34,32 @@
 }
 
 .jacket {
+  position: relative;
   margin: 0px auto;
   max-width: 270px;
+}
+
+.jacket-img {
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  z-index: 0;
+}
+
+/* #F2CE16 */
+
+.seekbar {
+  position: absolute;
+  bottom: 0;
+  display: block;
+  background-color: #333;
+  height: 8px;
+  width: 100%;
+}
+
+.play-pos {
+  background-color: #F2CE16;
+  height: 100%;
+  width: 0px;
 }
 
 .right-btn {
@@ -50,7 +78,7 @@
 .volume-ctl, .like-ctl {
   width: 40px;
   height: 40px;
-  margin-top: 5px;
+  margin: 5px 10px 0px;
 }
 
 .volume-ctl {

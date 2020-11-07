@@ -11,6 +11,9 @@ class Player extends React.Component {
       url: "",
       title: "",
       artist: "",
+      liked: false,
+      // 再生位置を管理
+      playingRate: 0,
     };
   }
   async componentWillMount() {
@@ -22,13 +25,45 @@ class Player extends React.Component {
       url: await getMusicData(this.props.id, "url"),
     });
   }
+  toggleLike() {
+    this.setState({ liked: !this.state.liked })
+    this.state.liked ? this.liked() : this.unliked();
+  }
+  liked() {
+    // Likeした時の実装
+    console.log("liked");
+  }
+  unliked() {
+    // Likeを外した時の実装
+    console.log("unliked");
+  }
+  tappedLeftButton() {
+    // 左の矢印を押された時の実装
+    console.log("tapped left button");
+  }
+  tappedRightButton() {
+    // 右の矢印を押された時の実装
+    console.log("tapped right button");
+  }
+  tappedSeekBar(e) {
+    const zeroPos = e.target.getBoundingClientRect().left;
+    const seekbarLen = e.target.getBoundingClientRect().right - zeroPos;
+    const tappedPos = e.clientX;
+    const diffPos = tappedPos - zeroPos;
+    const playingRate = (diffPos / seekbarLen) * 100;
+    console.log(playingRate);
+    this.setState({ playingRate: playingRate });
+
+  }
   render() {
+    const likeCls = this.state.liked ? "far fa-heart fa-2x" : "fas fa-heart fa-2x";
+    const likeStyle = this.state.liked ? {"color": "#333"} : {"color": "red"};
     return (
       <>
         {this.state.url ? (
           <div className="player">
             <div className="top">
-              <div className="left-btn">
+              <div className="left-btn" onClick={ () => this.tappedLeftButton() }>
                 <i
                   class="fas fa-chevron-left fa-3x"
                   onClick={this.props.onPrev}
@@ -37,13 +72,13 @@ class Player extends React.Component {
               <div className="jacket-wrapper">
                 <div className="jacket">
                   <YoutubeFrame src={this.state.url} edge="250" />
-                  <div className="seekbar">
-                    <div className="play-pos" />
-                  </div>
+                  <div className="seekbar" onClick={ (e) => this.tappedSeekBar(e) }>
+                <div className="play-pos" style={{"width": `${ this.state.playingRate }%`}}></div>
+              </div>
                 </div>
               </div>
               
-              <div className="right-btn">
+              <div className="right-btn" onClick={ () => this.tappedRightButton() }>
                 <i
                   class="fas fa-chevron-right fa-3x"
                   onClick={this.props.onNext}
@@ -58,8 +93,8 @@ class Player extends React.Component {
                 <h3>{this.state.artist}</h3>
                 <h5>{this.state.title}</h5>
               </div>
-              <div className="like-ctl">
-                <i class="far fa-heart fa-2x"></i>
+              <div className="like-ctl" onClick={ () => this.toggleLike() }>
+                <i className={ likeCls } style={ likeStyle }></i>
               </div>
             </div>
           </div>

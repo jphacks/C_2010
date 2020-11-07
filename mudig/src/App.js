@@ -16,16 +16,16 @@ import firebase from "firebase";
 function App() {
   return (
     <div>
-      <Header className="fixed" />
       <Router>
+        <Header className="fixed" />
         <div>
           <Route exact path="/" component={Dig} />
           <Route path="/library" component={Library} />
           <Route path="/post" component={Post} />
           <Route path="/firetest" component={Firetest} />
         </div>
+        <Footer />
       </Router>
-      <Footer />
     </div>
   );
 }
