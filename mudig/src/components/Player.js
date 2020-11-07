@@ -5,7 +5,27 @@ import jacketImage from '../img/jacket-image.jpg';
 
 
 class Player extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      liked: false,
+    }
+  }
+  toggleLike() {
+    this.setState({ liked: !this.state.liked })
+    this.state.liked ? this.liked() : this.unliked();
+  }
+  liked() {
+    // Likeした時の実装
+    console.log("liked");
+  }
+  unliked() {
+    // Likeを外した時の実装
+    console.log("unliked");
+  }
   render() {
+    const likeCls = this.state.liked ? "far fa-heart fa-2x" : "fas fa-heart fa-2x";
+    const likeStyle = this.state.liked ? {"color": "#333"} : {"color": "red"};
     return (
       <div className="player">
         <div className="top">
@@ -30,7 +50,9 @@ class Player extends React.Component {
             <h3>Pretender</h3>
             <h5>Official髭男dism</h5>
           </div>
-          <div className="like-ctl"><i className="far fa-heart fa-2x"></i></div>
+          <div className="like-ctl" onClick={ () => this.toggleLike() }>
+            <i className={ likeCls } style={ likeStyle }></i>
+            </div>
         </div>
       </div>
     );
