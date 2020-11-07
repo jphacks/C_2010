@@ -9,6 +9,8 @@ class Player extends React.Component {
     super(props);
     this.state = {
       liked: false,
+      // 再生位置を管理
+      playingRate: 30,
     }
   }
   toggleLike() {
@@ -44,7 +46,7 @@ class Player extends React.Component {
             <div className="jacket">
               <img className="jacket-img" src={jacketImage} />
               <div className="seekbar">
-                <div className="play-pos" />
+                <div className="play-pos" style={{"width": `${ this.state.playingRate }%`}}></div>
               </div>
             </div>
           </div>
