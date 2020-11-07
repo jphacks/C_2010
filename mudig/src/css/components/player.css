@@ -1,0 +1,102 @@
+
+.player {
+  /* background-color: pink; */
+  padding-top: 80px;
+}
+
+.top {
+  height: 250px;
+  text-align: center;
+}
+
+.left-btn, .right-btn {
+  /* background-color: slateblue; */
+  display: inline-block;
+  width: 15%;
+  height: 100%;
+  line-height: 250px;
+}
+
+.left-btn:active, .right-btn:active {
+  opacity: 50%;
+}
+
+.left-btn {
+  float: left;
+}
+
+.jacket-wrapper {
+  /* background-color: teal; */
+  display: inline-block;
+  width: 70%;
+  height: 100%;
+  text-align: center;
+}
+
+.jacket {
+  position: relative;
+  margin: 0px auto;
+  max-width: 270px;
+}
+
+.jacket-img {
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  z-index: 0;
+}
+
+/* #F2CE16 */
+
+.seekbar {
+  position: absolute;
+  bottom: 0;
+  display: block;
+  background-color: #333;
+  height: 8px;
+  width: 100%;
+}
+
+.play-pos {
+  background-color: #F2CE16;
+  height: 100%;
+  width: 0px;
+}
+
+.right-btn {
+  float: right;
+}
+
+/* ==== player bottom ==== */
+
+.bottom {
+  /* background-color: tan; */
+  margin-top: 30px;
+  height: 90px;
+  text-align: center;
+}
+
+.volume-ctl, .like-ctl {
+  width: 40px;
+  height: 40px;
+  margin: 5px 10px 0px;
+}
+
+.volume-ctl {
+  display: inline-block;
+}
+
+.music-info {
+  /* background-color: teal; */
+  display: inline-block;
+  margin: 0px 20px;
+  vertical-align: top;
+}
+
+.music-info h3 {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.like-ctl {
+  display: inline-block;
+}

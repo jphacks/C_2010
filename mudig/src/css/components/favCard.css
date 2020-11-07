@@ -1,0 +1,42 @@
+.music-card {
+  box-sizing: border-box;
+  width: 50%;
+  float: left;
+  padding: 20px 15px;
+}
+
+.jacket-img {
+  width: 100%;
+}
+
+.music-info {
+  position: relative;
+  margin: 0 auto;
+  width: 150px;
+}
+
+.nameWrapper{
+  position: absolute;
+  text-align: left;
+  top: 2px;
+  left: 3px;
+}
+
+.music-name {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.artist-name {
+  font-size: 14px;
+}
+
+.like {
+  position: absolute;
+  top: 2px;
+  right: 3px;
+}
+
+.like i {
+  color: #eb5757;
+}
