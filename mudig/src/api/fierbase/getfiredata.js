@@ -10,6 +10,7 @@ async function getMusicData(id, type){
     if (data == null || data.length == 0) {
       data = await db.ref("/").once("value").then(snapshot => snapshot.val());
     }
+    console.log(data);
     var index = await id;
     console.log("index=" + index);
     switch (type) {
