@@ -24,6 +24,7 @@ class PostForm extends React.Component {
   clearTextField() {
     // 要は画面の再読み込み
     window.location.reload();
+
   }
 
   render() {
