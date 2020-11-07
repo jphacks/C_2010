@@ -24,7 +24,7 @@ class Header extends React.Component {
           </div>
 
           <ul className="menu" style={ menuVisuable }>
-            <li onClick={ () => this.toggleMenuState() }><Link to="/dig">Dig</Link></li>
+            <li onClick={ () => this.toggleMenuState() }><Link to="/">Dig</Link></li>
             <li onClick={ () => this.toggleMenuState() }><Link to="/library">Library</Link></li>
             <li onClick={ () => this.toggleMenuState() }><Link to="/post">Post</Link></li>
           </ul>
