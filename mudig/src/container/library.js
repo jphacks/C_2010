@@ -25,11 +25,6 @@ class Library extends React.Component {
               })}
               <div className="clear"></div>
             </div>
-            
-            {/* 開発用のページ移動ボタン */}
-            <button><Link to="/dig">Digへ移動</Link></button>
-            <button><Link to="/library">Libraryへ移動</Link></button>
-            <button><Link to="/post">Postへ移動</Link></button>
           </div>
 
         ) : (
