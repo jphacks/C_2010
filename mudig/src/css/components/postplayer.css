@@ -8,6 +8,7 @@
 }
 
 .post-jacket {
+  position: relative;
   width: 70%;
   margin: 0 auto;
   max-width: 300px;
