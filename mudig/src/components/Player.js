@@ -23,13 +23,21 @@ class Player extends React.Component {
     // Likeを外した時の実装
     console.log("unliked");
   }
+  tappedLeftButton() {
+    // 左の矢印を押された時の実装
+    console.log("tapped left button");
+  }
+  tappedRightButton() {
+    // 右の矢印を押された時の実装
+    console.log("tapped right button");
+  }
   render() {
     const likeCls = this.state.liked ? "far fa-heart fa-2x" : "fas fa-heart fa-2x";
     const likeStyle = this.state.liked ? {"color": "#333"} : {"color": "red"};
     return (
       <div className="player">
         <div className="top">
-          <div className="left-btn">
+          <div className="left-btn" onClick={ () => this.tappedLeftButton() }>
             <i className="fas fa-chevron-left fa-3x"></i>
           </div>
           <div className="jacket-wrapper">
@@ -40,7 +48,7 @@ class Player extends React.Component {
               </div>
             </div>
           </div>
-          <div className="right-btn">
+          <div className="right-btn" onClick={ () => this.tappedRightButton() }>
             <i className="fas fa-chevron-right fa-3x"></i>
           </div>
         </div>

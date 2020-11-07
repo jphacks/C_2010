@@ -17,6 +17,10 @@
   line-height: 250px;
 }
 
+.left-btn:active, .right-btn:active {
+  opacity: 50%;
+}
+
 .left-btn {
   float: left;
 }
