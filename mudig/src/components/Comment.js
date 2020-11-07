@@ -6,14 +6,13 @@ class Header extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      id: props.id,
       comment: "",
     };
   }
-  async componentWillMount() {
+  async componentDidMount() {
     console.log("called willMount");
     this.setState({
-      comment: await getMusicData(this.state.id, "comment"),
+      comment: await getMusicData(this.props.id, "comment"),
     });
   }
   render() {
@@ -36,7 +35,7 @@ class Header extends React.Component {
           </p>
         </div>
       </div>
-      ) : ( <h1>あああ</h1>) }
+      ) : null }
       </>
     );
   }

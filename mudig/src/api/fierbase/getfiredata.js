@@ -7,13 +7,11 @@ async function getMusicData(id, type){
   //  var data;
   let data = await db.ref("/").once("value").then(snapshot => snapshot.val());
 
-  console.log("data: ", data);
-
     if (data == null || data.length == 0) {
-      this.getFireData();
+      data = await db.ref("/").once("value").then(snapshot => snapshot.val());
     }
     var index = await id;
-    console.log("index=" + index)
+    console.log("index=" + index);
     switch (type) {
       case "title":
         return data[index]?.music.title;
