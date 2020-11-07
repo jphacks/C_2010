@@ -18,9 +18,12 @@ class PostForm extends React.Component {
   handleSubmit(event) {
     event.preventDefault();
     console.log("submitted!");
-    AddMusicData(this.state.artist, this.state.comment, 12, 45, this.state.title, this.state.url);
+    // AddMusicData(this.state.artist, this.state.comment, 12, 45, this.state.title, this.state.url);
     // alert('A name was submitted: ' + this.state.value);
-
+    this.setState({ [this.state.artist]: null });
+    this.setState({ [this.state.comment]: null});
+    this.setState({ [this.state.title]: null });
+    this.setState({ [this.state.url]: null });
   }
 
   render() {
